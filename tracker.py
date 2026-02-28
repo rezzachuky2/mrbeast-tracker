@@ -29,7 +29,7 @@ def generate_image(subs):
     font_size = 200
 
     while True:
-        font = ImageFont.truetype("font.ttf", font_size)
+        font = ImageFont.truetype("font.otf", font_size)
         bbox = draw.textbbox((0, 0), formatted, font=font)
         text_width = bbox[2] - bbox[0]
         if text_width <= max_width:
